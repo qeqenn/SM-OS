@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.namecenter {
+  margin: auto;
+ width: 151px;
+}.buttoncenter {
+  margin: auto;
+ width: 100px;
+}
+</style>
+<script>
+
+function wait(time) {
+  return new Promise(resolve => setTimeout(resolve, time));
+}
+
+
+
+
+async function load(){
+	
+	document.getElementById("load").innerHTML = "登录中.";
+	await wait(1000);
+	document.getElementById("load").innerHTML = "登录中..";
+	await wait(1000);
+	document.getElementById("load").innerHTML = "登录中...";
+	await wait(1000);
+	window.location.href = window.location.href+'/../Scenzid_Maghned_OS_Main.html';
+}
+</script>
+</head>
+<body background="bg.png">
+<div>
+<div class="namecenter">
+<h1>SM User</h1>
+</div>
+<br/>
+<div class="buttoncenter">
+<button id="load" name="load" class="buttoncenter" onclick="javascript:load()">登录</button>
+</div>
+</body>
+</html>

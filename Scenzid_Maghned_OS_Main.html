@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.foot{
+    height:50px;
+    width:100%;
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+  border-radius: 20px;
+    position: fixed;
+    bottom: 0;
+}
+
+.stjpg{
+    height:50px;
+    width:50px;
+}
+
+.startmenu{
+    height:200px;
+    width:100px;
+    background-color:green;
+display:none}
+
+.start{
+height:54px;
+    width:54px;}
+</style>
+
+<script>
+var stmenudisplay=0;
+function ClickStart(){
+if(stmenudisplay==0){
+    startmenu.style.display="block";}
+else{startmenu.style.display="none"
+}
+</script>
+</head>
+<body background="bg.png" >
+<div id="foot" class="foot">
+<div id="start" class="start">
+<a herf="javascript:ClickStart()"><img class="stjpg" src="Start.jpg"></a>
+</div>
+</div>
+
+<div id="startmenu" name="startmenu"  class="startmenu">
+<a href="Shutdown">关机</a>
+</div>
+
+</body>
+</html>
